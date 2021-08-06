@@ -75,16 +75,16 @@ if prg == "CCode":
         key1 = st.number_input(
             "Select the key code to encrypt the above text", step=1, max_value=10, min_value=1)
         coded = encrypter(userdata1, key1)
-        st.write("".join(coded))
+        st.success("".join(coded))
     elif c == "2. Decrypter":
         userdata2 = st.text_input("Enter the text you want to Decrypt: ")
         key2 = st.number_input(
             "Select the key code to decrypt the above text", step=1, max_value=10, min_value=1)
         coded = decrypter(userdata2, key2)
         st.write("Decrypted Text is")
-        st.write("".join(coded))
+        st.success("".join(coded))
     else:
-        st.write("Enter a valid Choice")
+        st.warning("Enter a valid Choice")
 
 
 elif prg == "Aud2txt":
